@@ -1,0 +1,15 @@
+[project]
+name = "foo"
+version = "v0.1.0"
+requires-python = ">= 3.10"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["foo"]
+namespaces = true
+
+[build-system]
+requires = ["setuptools >= 75.3.0"]
+build-backend = "setuptools.build_meta"
+
+# ref: https://realpython.com/python-namespace-package/
